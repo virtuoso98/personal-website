@@ -7,12 +7,8 @@ import Navbar from './pages/Navbar';
 /* temp stuff*/
 import Typography from '@material-ui/core/Typography';
 
-
-/* landing page */ 
+/* landing page */
 import yurucamp from './assets/images/yurucamp3.png'
-
-
-
 
 
 function App() {
