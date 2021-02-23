@@ -4,7 +4,7 @@ import { Theme, makeStyles } from '@material-ui/core/styles';
 import avatar from '../assets/images/avatar.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import DrawerNav from './DrawerNav';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -96,7 +96,7 @@ const Navbar = () => {
                         <Grid item xs = {8} className={classes.headerSection}>
                             <IconButton onClick = {handleMenuOpen}>
                                 <MenuIcon />
-                                
+                                <DrawerNav />
                             </IconButton>
                             <Typography variant="h6">To be built</Typography>
                         </Grid>

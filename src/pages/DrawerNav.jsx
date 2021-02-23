@@ -35,11 +35,22 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-interface DraweMenuProps {
-    open: boolean;
-    setOpen: () => void;
-  }
 
-const DrawerNav = () => {
+const DrawerNav = (props) => {
+  const classes = useStyles();
 
+  return (
+    <div>
+      <Drawer
+        variant = "temporary"
+        onClose = {props.setOpen}
+        open = {props.open}
+      >
+        hello
+
+      </Drawer>
+    </div>
+  )
 }
+
+export default DrawerNav;
