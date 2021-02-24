@@ -1,25 +1,29 @@
 import React, {useState, useContext} from 'react';
 import {AppBar, Toolbar, Typography, Button, Grid, Avatar, IconButton, Hidden} from '@material-ui/core';
 import { Theme, makeStyles } from '@material-ui/core/styles';
-import avatar from '../assets/images/avatar.png';
+import avatar from '../../assets/images/avatar.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerNav from './DrawerNav';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
-        fontSize: 12,
         justifyContent: 'center',
         backgroundColor: "pink",
-        flexGrow: 1
+        flexGrow: 1,
+        position: 'fixed',
     },
     headerSection:{
         display: 'flex',
         textAlign: 'left',
         alignItems: 'center',
-        '& .MuiAvatar-root': {
-            marginRight: 20,
+        '& .MuiSvgIcon-root': {
+            paddingRight: 10,
           },
+          '& .MuiTypography-root': {
+            fontFamily: 'DotGothic16',
+            fontWeight: 500,
+          }
     },
     buttonSection:{
         display: 'flex',
@@ -29,10 +33,14 @@ const useStyles = makeStyles((theme) => ({
         '& .MuiButton-root': {
             marginRight: 20,
             '& .MuiTypography-root': {
-                transition: 'transform 0.4s',
-                fontSize: 16,
+                color: "black",
+                fontFamily: 'DotGothic16',
+                fontWeight: 'fontWeightBold',
+                transition: 'transform 0.7s',
+                fontSize: 18,
                 '&:hover': {
-                    transform: 'scale(1.2)',
+                    transform: 'scale(1.1)',
+                    color: "white"
                 },
             },
         }      
@@ -59,10 +67,12 @@ const Navbar = () => {
                     <Hidden mdDown>
                         <Grid item xs = {1}></Grid>
                         <Grid item xs = {2} className ={classes.headerSection}>
-                            <Avatar alt = "Koa Zhao Yuan" src = {avatar}></Avatar>
-                            <Typography variant="h6" component = 'h1'>
-                                Zhao!
-                            </Typography>
+                            <Button href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
+                                <GitHubIcon />
+                                <Typography variant="h6" component = 'h1'>
+                                    virtuoso98
+                                </Typography>
+                            </Button>
                         </Grid>
                         <Grid item xs = {8} className = {classes.buttonSection}>
                             <Button color="inherit">
@@ -86,9 +96,6 @@ const Navbar = () => {
                             <Button color="inherit">
                                 <Typography>Contact</Typography>
                             </Button>
-                            <IconButton href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
-                                <GitHubIcon />
-                            </IconButton>
                         </Grid>
                         <Grid item xs = {1}></Grid>
                     </Hidden>
