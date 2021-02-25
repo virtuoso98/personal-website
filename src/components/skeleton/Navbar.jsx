@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react';
 import {AppBar, Toolbar, Typography, Button, Grid, Avatar, IconButton, Hidden} from '@material-ui/core';
 import { Theme, makeStyles } from '@material-ui/core/styles';
-import avatar from '../../assets/images/avatar.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerNav from './DrawerNav';
@@ -85,16 +84,13 @@ const Navbar = () => {
                                 <Typography>Experiences</Typography>
                             </Button>
                             <Button color="inherit">
+                                <Typography>Projects</Typography>
+                            </Button>
+                            <Button color="inherit">
                                 <Typography>Abilities</Typography>
                             </Button>
                             <Button color="inherit">
                                 <Typography>Hobbies</Typography>
-                            </Button>
-                            <Button color="inherit">
-                                <Typography>Resume</Typography>
-                            </Button>
-                            <Button color="inherit">
-                                <Typography>Contact</Typography>
                             </Button>
                         </Grid>
                         <Grid item xs = {1}></Grid>
@@ -109,7 +105,6 @@ const Navbar = () => {
                         </Grid>
                         <Grid item xs = {3}></Grid>
                         <Grid item xs = {1} className = {classes.buttonSection}>
-                            <Avatar alt = "Koa Zhao Yuan" src = {avatar}></Avatar>
                         </Grid>
                     </Hidden>
                 </Grid>

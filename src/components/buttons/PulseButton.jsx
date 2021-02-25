@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     boxShadow: `0 0 0 0 ${theme.palette.primary.main}80`,
     animation: `$pulse 1.5s ease infinite`,
-    margin: '45px 20px',
+    margin: '35px 20px',
     zIndex: 2,
     '& .MuiSvgIcon-root': {
       paddingRight: 8,
@@ -34,11 +34,17 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const PulseButton = ({buttonText, icon}) => {
+const PulseButton = ({buttonText, icon, link}) => {
 
   const classes = useStyles();
   return (
-    <Button className={classes.root} color="primary" variant="contained">
+    <Button 
+    className={classes.root} 
+    color="primary" 
+    variant="contained" 
+    href={link} 
+    without rel="noopener noreferrer" 
+    target="_blank">
       {icon} {buttonText}
     </Button>
   )

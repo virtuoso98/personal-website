@@ -3,8 +3,9 @@ import {Typography, Button, Grid} from '@material-ui/core';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import wallpaper from '../../assets/images/wallpaper2.jpg';
-import { PlayCircleFilledWhite } from '@material-ui/icons';
 import PulseButton from '../buttons/PulseButton';
+import resume from '../../assets/documents/Zhao_Resume.pdf';
+
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -32,13 +33,13 @@ const useStyles = makeStyles((theme) =>
       }
     }
   }),
-  
 );
 
 const Landing = () => {
     const classes = useStyles();
 
-    const buttonText = "hello world";
+    const resumetext = "Resume";
+    const contacttext = "Contact Me";
     
     return (
       <div className = {classes.background}>
@@ -49,8 +50,16 @@ const Landing = () => {
           <Typography variant="h2">
             Aspiring Software Engineer
           </Typography>
-          <PulseButton buttonText={buttonText} icon={<MailIcon />}/>
-          <PulseButton buttonText={buttonText} icon={<DescriptionIcon />}/>
+          <PulseButton 
+          buttonText={contacttext} 
+          icon={<MailIcon />}
+          link="mailto:k.zhaoyuan98@u.yale-nus.edu.sg"
+          />
+          <PulseButton 
+          buttonText={resumetext} 
+          icon={<DescriptionIcon />}
+          link={resume}
+          />
         </div>
       </div>
     )
