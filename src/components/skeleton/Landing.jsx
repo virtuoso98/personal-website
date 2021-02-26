@@ -1,5 +1,5 @@
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
-import {Typography, Button, Grid} from '@material-ui/core';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import wallpaper from '../../assets/images/wallpaper2.jpg';
@@ -28,41 +28,40 @@ const useStyles = makeStyles((theme) =>
       // zIndex: 1,
       transform: 'translate(-50%, -50%)',
       '& .MuiTypography-root': {
-        fontFamily: 'Lora',
         color: "white",
-      }
-    }
+      },
+    },
   }),
 );
 
 const Landing = () => {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    const resumetext = "Resume";
-    const contacttext = "Contact Me";
-    
-    return (
-      <div className = {classes.background}>
-        <div className = {classes.content}>
-          <Typography variant="h1">
-            Koa Zhao Yuan
+  const resumetext = "Resume";
+  const contacttext = "Contact Me";
+
+  return (
+    <div className={classes.background} id="home">
+      <div className={classes.content}>
+        <Typography variant="h1">
+          Koa Zhao Yuan
           </Typography>
-          <Typography variant="h2">
-            Aspiring Software Engineer
+        <Typography variant="h2">
+          Aspiring Software Engineer
           </Typography>
-          <PulseButton 
-          buttonText={contacttext} 
+        <PulseButton
+          buttonText={contacttext}
           icon={<MailIcon />}
           link="mailto:k.zhaoyuan98@u.yale-nus.edu.sg"
-          />
-          <PulseButton 
-          buttonText={resumetext} 
+        />
+        <PulseButton
+          buttonText={resumetext}
           icon={<DescriptionIcon />}
           link={resume}
-          />
-        </div>
+        />
       </div>
-    )
+    </div>
+  )
 }
 
 export default Landing;

@@ -1,5 +1,5 @@
-import React, { useState, useContext } from 'react';
-import { Theme, makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 2,
     '& .MuiSvgIcon-root': {
       paddingRight: 8,
-    }
+    },
   },
   '@keyframes pulse': {
     '0%': {
@@ -31,20 +31,20 @@ const useStyles = makeStyles((theme) => ({
       transform: 'scale(0.85)',
       boxShadow: `0 0 0 0 ${theme.palette.primary.main}00`,
     },
-  }
+  },
 }));
 
-const PulseButton = ({buttonText, icon, link}) => {
+const PulseButton = ({ buttonText, icon, link }) => {
 
   const classes = useStyles();
   return (
-    <Button 
-    className={classes.root} 
-    color="primary" 
-    variant="contained" 
-    href={link} 
-    without rel="noopener noreferrer" 
-    target="_blank">
+    <Button
+      className={classes.root}
+      color="primary"
+      variant="contained"
+      href={link}
+      without rel="noopener noreferrer"
+      target="_blank">
       {icon} {buttonText}
     </Button>
   )
