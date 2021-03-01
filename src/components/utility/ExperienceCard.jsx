@@ -10,17 +10,28 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-const ExperienceCard = ({image, date, description, icons}) => {
+const ExperienceCard = ({image, name, position, date, description, icons}) => {
   return (
     <Card elevation={5}>
       <CardActionArea>
         <CardMedia 
           component="img"
-          height="160"
+          height="210"
           image={image}
         />
         <CardContent>
-          
+          <Typography variant="h5">
+            {name}
+          </Typography>
+          <Typography variant="h6">
+            {position}
+          </Typography>
+          <Typography variant="h6">
+            {date}
+          </Typography>
+          <Typography component="p">
+            {description}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

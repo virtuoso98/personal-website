@@ -44,7 +44,11 @@ const useStyles = makeStyles((theme) => ({
         },
         '&:hover': {
           transform: 'scale(1.1)',
-          color: 'white'
+          '& a': {
+            textDecoration: 'none',
+            color: 'white',
+            transform: 'scale(1.1)',
+          },
         },
       },
     },
@@ -89,13 +93,13 @@ const Navbar = () => {
                 <Typography><a href="#experiences">Experiences</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography>Projects</Typography>
+                <Typography><a href="#projects">Projects</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography>Research</Typography>
+                <Typography><a href="#research">Research</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography>Hobbies</Typography>
+                <Typography><a href="#hobbies">Hobbies</a></Typography>
               </Button>
             </Grid>
             <Grid item xs={1}></Grid>

@@ -56,13 +56,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ExpandButton = ({ icon, text, color }) => {
+
+
+
+const ExpandButton = ({ icon, text, color, link }) => {
   const styleProps = {
     color: color
   }
   const classes = useStyles(styleProps);
-
-
+  const redirect = (link) => {
+    window.open(link);
+  }
+  
   return (
     <button className={classes.expandingButton}>
       <img src={icon} width="50" />

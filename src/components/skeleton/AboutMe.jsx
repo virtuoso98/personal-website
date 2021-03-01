@@ -81,21 +81,25 @@ const AboutMe = () => {
               icon={linkedin}
               text="Connect"
               color="#00EBEB"
+              link="https://www.linkedin.com/in/zhaooo/"
             />
             <ExpandButton
               icon={instagram}
               text="Follow"
               color="#ffccff"
+              link="https://www.instagram.com/zhaoooo__/"
             />
             <ExpandButton
               icon={medium}
               text="Read"
               color="white"
+              link="https://medium.com/"
             />
             <ExpandButton
               icon={facebook}
               text="Socialize"
               color="#e6ffff"
+              link="https://www.facebook.com/zhaooooooooo/"
             />
           </div>
         </div>
