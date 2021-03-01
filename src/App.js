@@ -3,7 +3,8 @@ import React from 'react';
 import Navbar from './components/skeleton/Navbar';
 import Landing from './components/skeleton/Landing';
 import AboutMe from './components/skeleton/AboutMe';
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import Experiences from './components/skeleton/Experiences';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -23,6 +24,7 @@ function App() {
     <Navbar />
     <Landing />
     <AboutMe />
+    <Experiences />
     </div>
   );
 }

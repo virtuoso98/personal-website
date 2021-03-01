@@ -4,6 +4,9 @@ import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import profile from '../../assets/images/avatar.jpg';
 import ExpandButton from '../buttons/ExpandButton';
 import linkedin from '../../assets/svg-icons/linkedin.svg';
+import facebook from '../../assets/svg-icons/facebook.svg';
+import instagram from '../../assets/svg-icons/instagram.svg';
+import medium from '../../assets/svg-icons/medium.svg';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -33,11 +36,15 @@ const useStyles = makeStyles((theme) =>
       },
       '& .MuiTypography-body1': {
         paddingBottom: '15px',
-        marginRight: '5px',
+        marginRight: '15px',
         lineHeight: '1.6',
         color: '#453D3B',
         fontSize: '1vw',
       },
+    },
+    rule: {
+      marginTop: '6vh',
+      marginBottom: '-2vh',
     },
   }),
 );
@@ -47,7 +54,7 @@ const AboutMe = () => {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={6} className={classes.root} id="about">
+    <Grid container spacing={3} className={classes.root} id="about">
       <Grid item xs={2}></Grid>
       <Grid item xs={8}>
         <Typography variant="h2">
@@ -76,9 +83,19 @@ const AboutMe = () => {
               color="#00EBEB"
             />
             <ExpandButton
-              icon={linkedin}
-              text="Connect"
-              color="red"
+              icon={instagram}
+              text="Follow"
+              color="#ffccff"
+            />
+            <ExpandButton
+              icon={medium}
+              text="Read"
+              color="white"
+            />
+            <ExpandButton
+              icon={facebook}
+              text="Socialize"
+              color="#e6ffff"
             />
           </div>
         </div>
@@ -89,7 +106,13 @@ const AboutMe = () => {
         </div>
       </Grid>
       <Grid item xs={2}></Grid>
+      <Grid item xs={2}></Grid>
+      <Grid item xs={8}>
+        <hr className={classes.rule}></hr>
+      </Grid>
+      <Grid item xs={2}></Grid>
     </Grid>
+    
   )
 }
 export default AboutMe;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   expandingButton: {
+    marginTop: '4vh',
     fontFamily: 'Lora',
     marginRight: '2vw',
     backgroundColor: styleProps => styleProps.color,
@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     },
 
     '& span': {
-      color: 'white',
+      color: 'black',
+      fontWeight: '800',
       margin: '12px', // same as button padding,
       whiteSpace: 'nowrap',
       textTransform: 'uppercase',

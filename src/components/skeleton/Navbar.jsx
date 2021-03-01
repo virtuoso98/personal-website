@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
         '& a': {
           textDecoration: 'none',
           color: 'black',
+          
         },
         '&:hover': {
           transform: 'scale(1.1)',
@@ -85,7 +86,7 @@ const Navbar = () => {
                 <Typography><a href="#about">About</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography>Experiences</Typography>
+                <Typography><a href="#experiences">Experiences</a></Typography>
               </Button>
               <Button color="inherit">
                 <Typography>Projects</Typography>
