@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) =>
       },
       '& .MuiTypography-body1': {
         color: '#808080',
+        paddingTop: "5px",
       },
     },
   }),

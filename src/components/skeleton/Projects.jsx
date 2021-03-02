@@ -34,7 +34,6 @@ const Projects = () => {
   }
   
   const iconMap = listMap(iconLabel, iconList)
-  console.log(iconMap);
 
   return (
     <Grid container spacing={3} className={classes.root} id="projects">
@@ -53,6 +52,8 @@ const Projects = () => {
         date="Feb 2021"
         description=
         "This personal project was something that I undertook in order to explore Web Development and also hone my skills in effective design interfaces."
+        iconMap={iconMap}
+        iconLabel={iconLabel}
         />
       </Grid>
       <Grid item xs={4}>
@@ -62,6 +63,8 @@ const Projects = () => {
         date="Jun 2020"
         description=
         "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him in other ways!"
+        iconMap={iconMap}
+        iconLabel={iconLabel}
         />
       </Grid>
       <Grid item xs={2}></Grid>

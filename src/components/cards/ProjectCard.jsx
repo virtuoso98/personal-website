@@ -18,19 +18,33 @@ const useStyles = makeStyles((theme) =>
       },
       '& .MuiTypography-body1': {
         color: '#808080',
+        paddingTop: '5px',
+        paddingBottom: '8px',
       },
+      '& svg': {
+        height: 'auto',
+        marginRight: "3px",
+      }
     },
   }),
 );
 
 
-const ProjectCard = ({image, name, date, description}) => {
+const ProjectCard = ({ image, name, date, description, iconMap, iconLabel }) => {
   const classes = useStyles();
+  const listItems = iconLabel.map((label) => {
+    console.log(label);
+    console.log(iconMap.get(label));
+    return(
+    <Tooltip title={label} aria-label={label} placement="bottom" arrow>
+      <img width="50" src={iconMap.get(label)} />
+    </Tooltip>)
+  });
 
   return (
     <Card elevation={5} className={classes.root}>
       <CardActionArea>
-        <CardMedia 
+        <CardMedia
           component="img"
           height="280"
           image={image}
@@ -45,10 +59,8 @@ const ProjectCard = ({image, name, date, description}) => {
           <Typography variant="body1">
             {description}
           </Typography>
+          {listItems}
         </CardContent>
-        <Tooltip title="Material-UI" aria-label="Material-UI">
-            <SvgIcon component={mui} viewBox= "0 0 100 100" />
-        </Tooltip>
       </CardActionArea>
     </Card>
   );
