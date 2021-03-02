@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { Grid, Typography } from '@material-ui/core';
-import ExperienceCard from '../utility/ExperienceCard';
+import ExperienceCard from '../cards/ExperienceCard';
 import campus from '../../assets/images/campus.jpg'; 
 import mystery from '../../assets/images/mystery.jpg'; 
 import nyjc from '../../assets/images/nyjc.png'; 
@@ -10,6 +10,7 @@ import smartjen from '../../assets/images/smartjen.png';
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
+        paddingTop: '6vh',
         backgroundColor: '#ffe6f3',
     },
   }),

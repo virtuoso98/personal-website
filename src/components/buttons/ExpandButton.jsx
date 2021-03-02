@@ -64,14 +64,14 @@ const ExpandButton = ({ icon, text, color, link }) => {
     color: color
   }
   const classes = useStyles(styleProps);
-  const redirect = (link) => {
+  const redirect = () => {
     window.open(link);
   }
   
   return (
-    <button className={classes.expandingButton}>
+    <button className={classes.expandingButton} onClick={() => redirect()}>
       <img src={icon} width="50" />
-      <span>
+      <span> 
         {text}
       </span>
     </button>

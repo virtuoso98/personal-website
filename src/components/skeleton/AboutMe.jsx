@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) =>
     },
     rule: {
       marginTop: '6vh',
-      marginBottom: '-2vh',
+      marginBottom: '-5vh',
     },
   }),
 );
@@ -80,7 +80,7 @@ const AboutMe = () => {
             <ExpandButton
               icon={linkedin}
               text="Connect"
-              color="#00EBEB"
+              color="#00a0dc"
               link="https://www.linkedin.com/in/zhaooo/"
             />
             <ExpandButton
@@ -97,8 +97,8 @@ const AboutMe = () => {
             />
             <ExpandButton
               icon={facebook}
-              text="Socialize"
-              color="#e6ffff"
+              text="Add Me!"
+              color="#2AA4F4"
               link="https://www.facebook.com/zhaooooooooo/"
             />
           </div>
