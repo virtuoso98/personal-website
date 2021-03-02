@@ -1,6 +1,9 @@
 import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, SvgIcon, Tooltip } from '@material-ui/core';
+
+
+import mui from '../../assets/svg-icons/material-ui.svg';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -20,7 +23,8 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-const ExperienceCard = ({image, name, position, date, description}) => {
+
+const ProjectCard = ({image, name, date, description}) => {
   const classes = useStyles();
 
   return (
@@ -28,15 +32,12 @@ const ExperienceCard = ({image, name, position, date, description}) => {
       <CardActionArea>
         <CardMedia 
           component="img"
-          height="210"
+          height="280"
           image={image}
         />
         <CardContent>
           <Typography variant="h5">
             {name}
-          </Typography>
-          <Typography variant="h5">
-            {position}
           </Typography>
           <Typography variant="h6">
             {date}
@@ -45,9 +46,12 @@ const ExperienceCard = ({image, name, position, date, description}) => {
             {description}
           </Typography>
         </CardContent>
+        <Tooltip title="Material-UI" aria-label="Material-UI">
+            <SvgIcon component={mui} viewBox= "0 0 100 100" />
+        </Tooltip>
       </CardActionArea>
     </Card>
   );
 }
 
-export default ExperienceCard;
+export default ProjectCard;

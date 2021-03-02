@@ -10,8 +10,10 @@ import smartjen from '../../assets/images/smartjen.png';
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-        paddingTop: '6vh',
-        backgroundColor: '#ffe6f3',
+        paddingTop: '50px',
+    },
+    divider: {
+        marginTop: '100px',
     },
   }),
 );
@@ -36,7 +38,7 @@ const Experiences = () => {
                 position="GCE 'A' Levels Graduate"
                 date="Jan 2015 - Nov 2016"
                 description=
-                "My time here was truly enjoyable. Be it engaging in olympiads, playing chess games or studying, this school has given me a great sense of community."
+                "In my stay here. I engaged in olympiads, chess and running of the library. Beyond these opportunities, the community was also great and accepting."
                 />
             </Grid>
             <Grid item xs={4}>
@@ -46,7 +48,7 @@ const Experiences = () => {
                 position="Undergraduate"
                 date="Aug 2020 - May 2023"
                 description=
-                "Liberal Arts student by day, Coder by night. This school gave me the freedom to explore my diverse interests!"
+                "Liberal Arts student by day, Coder by night. This school gave me free reign to explore modules in Philosophy, Literature and Modern Social Thought."
                 />
             </Grid>
             <Grid item xs={2}></Grid>
@@ -55,19 +57,24 @@ const Experiences = () => {
                 <ExperienceCard 
                 image={smartjen}
                 name="SmartJen"
-                position="R&D OCR Intern"
+                position="R&D Intern"
                 date="Dec 2020- Jan 2021"
-                description="I interned here for a month from Dec 2020 to Jan 2021 in the R&D OCR Team. I implemented a character segmentation algorithm for handwritten mathematical expressions"
+                description="I implemented a character segmentation algorithm for handwritten mathematical expressions and deployed a working prototype on Flask."
                 />
             </Grid>
             <Grid item xs={4}>
                 <ExperienceCard 
                 image={mystery}
-                name="Future you"
-                position="To be confirmed"
+                name="Future Company"
+                position="To be determined"
                 date="In the future"
-                description="Want to be featured here on this website? Hire me now!"
+                description="Want to be featured on this website? Hire me now! On a more serious note, I'm open to summer Machine Learning and Software Engineering roles."
                 />
+            </Grid>
+            <Grid item xs={2}></Grid>
+            <Grid item xs={2}></Grid>
+            <Grid item xs={8}>
+                <hr className={classes.divider}></hr>
             </Grid>
             <Grid item xs={2}></Grid>
         </Grid>

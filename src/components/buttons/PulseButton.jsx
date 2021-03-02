@@ -40,7 +40,7 @@ const PulseButton = ({ buttonText, icon, link }) => {
   return (
     <Button
       className={classes.root}
-      color="primary"
+      color="secondary"
       variant="contained"
       href={link}
       without rel="noopener noreferrer"

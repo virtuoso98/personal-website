@@ -42,9 +42,9 @@ const useStyles = makeStyles((theme) =>
         fontSize: '1vw',
       },
     },
-    rule: {
-      marginTop: '6vh',
-      marginBottom: '-5vh',
+    divider: {
+      marginTop: '50px',
+      marginBottom: '-45px',
     },
   }),
 );
@@ -112,7 +112,7 @@ const AboutMe = () => {
       <Grid item xs={2}></Grid>
       <Grid item xs={2}></Grid>
       <Grid item xs={8}>
-        <hr className={classes.rule}></hr>
+        <hr className={classes.divider}></hr>
       </Grid>
       <Grid item xs={2}></Grid>
     </Grid>
