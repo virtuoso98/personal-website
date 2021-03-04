@@ -28,8 +28,9 @@ const useStyles = makeStyles((theme) =>
       display: 'flex',
       justifyContent: styleProps => styleProps.iconAlignment === 'left' ? 'flex-start' : 'space-evenly',
       '& img': {
-        marginRight: styleProps => styleProps.iconAlignment  === 'left' ? 20 : 0
-      }
+        marginRight: styleProps => styleProps.iconAlignment  === 'left' ? 15 : 0,
+        marginLeft: styleProps => styleProps.iconAlignment  === 'left' ? 10 : 0,
+      },
     },
   }),
 );

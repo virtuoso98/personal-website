@@ -66,8 +66,12 @@ const Research = () => {
                     Machine Based Learning solubility 
                   </Typography>
                   <Typography variant="body1">
-                    During the summer break of 2020, I participated in a research project with Prof Zhuang. Findings were published in Science 
-                    Advances, a highly regarded scientific journal. Click to know more!
+                    During the summer break of 2020, I participated in a research project with Prof Zhuang Bilin. This entailed 2 main tasks:
+                    Finding out the viability of using a first-principles mode to classify both and also the viability of using machine learning
+                    to predict the solubility of multiple solvents.Click this to find out more!
+                  </Typography>
+                  <Typography>
+                    Published in Science Advances
                   </Typography>
                   </CardContent>
                 </Grid>
