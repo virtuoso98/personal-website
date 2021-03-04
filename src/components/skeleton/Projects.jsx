@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) =>
 const Projects = () => {
   const classes = useStyles();
   const iconLabel = ["Material-UI", "React", "Javascript", "AWS-S3", "CSS3", "HTML5"];
+  const iconLabel2 = ["CSS3", "HTML5"];
   const iconList = [mui, reactjs, js, aws, css3, html5];
   const listMap = (labels, icons) => {
     const map = new Map();
@@ -54,6 +55,7 @@ const Projects = () => {
         "This personal project was something that I undertook in order to explore Web Development and also hone my skills in effective design interfaces."
         iconMap={iconMap}
         iconLabel={iconLabel}
+        link="https://github.com/virtuoso98/personal-website"
         />
       </Grid>
       <Grid item xs={4}>
@@ -62,9 +64,11 @@ const Projects = () => {
         name="Birthday Website"
         date="Jun 2020"
         description=
-        "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him in other ways!"
+        "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him with other means!"
         iconMap={iconMap}
-        iconLabel={iconLabel}
+        iconLabel={iconLabel2}
+        link="https://virtuoso98.github.io/btim999.github-io/"
+        iconAlignment="left"
         />
       </Grid>
       <Grid item xs={2}></Grid>
