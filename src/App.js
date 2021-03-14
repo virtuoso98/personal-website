@@ -4,9 +4,9 @@ import Navbar from './components/skeleton/Navbar';
 import Landing from './components/skeleton/Landing';
 import AboutMe from './components/skeleton/AboutMe';
 import Experiences from './components/skeleton/Experiences';
-
 import Projects from './components/skeleton/Projects';
 import Research from './components/skeleton/Research';
+import Hobbies from './components/skeleton/Hobbies';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) =>
@@ -31,6 +31,7 @@ function App() {
     <Experiences />
     <Research />
     <Projects />
+    <Hobbies />
     </div>
   );
 }

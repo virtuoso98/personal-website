@@ -93,10 +93,10 @@ const Navbar = () => {
                 <Typography><a href="#experiences">Experiences</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography><a href="#projects">Projects</a></Typography>
+                <Typography><a href="#research">Research</a></Typography>
               </Button>
               <Button color="inherit">
-                <Typography><a href="#research">Research</a></Typography>
+                <Typography><a href="#projects">Projects</a></Typography>
               </Button>
               <Button color="inherit">
                 <Typography><a href="#hobbies">Hobbies</a></Typography>

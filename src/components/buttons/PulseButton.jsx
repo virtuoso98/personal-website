@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '4px',
     border: '0',
     cursor: 'pointer',
-    boxShadow: `0 0 0 0 ${theme.palette.primary.main}80`,
+    boxShadow: `0 0 0 0 ${theme.palette.secondary.main}80`,
     animation: `$pulse 1.5s ease infinite`,
     margin: '35px 20px',
     zIndex: 2,
@@ -25,11 +25,11 @@ const useStyles = makeStyles((theme) => ({
     },
     '75%': {
       transform: 'scale(1)',
-      boxShadow: `0 0 0 15px ${theme.palette.primary.main}00`,
+      boxShadow: `0 0 0 15px ${theme.palette.secondary.main}00`,
     },
     '100%': {
       transform: 'scale(0.85)',
-      boxShadow: `0 0 0 0 ${theme.palette.primary.main}00`,
+      boxShadow: `0 0 0 0 ${theme.palette.secondary.main}00`,
     },
   },
 }));

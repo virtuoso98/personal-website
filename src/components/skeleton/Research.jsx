@@ -6,7 +6,7 @@ import chemistry from '../../assets/images/chemistry.jpg';
 const useStyles = makeStyles((theme) =>
   createStyles({
       root: {
-        paddingTop: '25px',
+        paddingTop: '55px',
         paddingBottom: '25px',
         '& .MuiPaper-root': {
           backgroundColor: 'pink',
@@ -37,7 +37,7 @@ const Research = () => {
   }
 
   return (
-    <Grid container className={classes.root}>
+    <Grid container className={classes.root} id="research">
       <Grid item xs={2}></Grid>
       <Grid item xs={8}>
         <Typography variant="h2">
