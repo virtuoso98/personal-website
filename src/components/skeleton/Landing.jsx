@@ -25,10 +25,24 @@ const useStyles = makeStyles((theme) =>
       textAlign: 'center',
       top: '50%',
       left: '50%',
+      width: '100%',
       // zIndex: 1,
       transform: 'translate(-50%, -50%)',
       '& .MuiTypography-root': {
         color: "white",
+      },
+      '@media only screen and (max-width:600px)': {
+        '& .MuiTypography-h1': {
+          fontSize: '35px',
+        },
+        '& .MuiTypography-h2': {
+          marginTop: '15px',
+          fontSize: '20px',
+          marginBottom: '15px',
+        },
+        '# .PulseButton': {
+
+        }
       },
     },
   }),
@@ -36,9 +50,8 @@ const useStyles = makeStyles((theme) =>
 
 const Landing = () => {
   const classes = useStyles();
-
   const resumetext = "Resume";
-  const contacttext = "Contact Me";
+  const contacttext = "Contact";
 
   return (
     <div className={classes.background} id="home">

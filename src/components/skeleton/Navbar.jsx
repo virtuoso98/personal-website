@@ -21,7 +21,23 @@ const useStyles = makeStyles((theme) => ({
     },
     '& .MuiTypography-root': {
       fontFamily: 'DotGothic16 !important',
-      fontWeight: 500,
+      color: 'black',
+      fontFamily: 'DotGothic16',
+      fontWeight: 'fontWeightBold',
+      transition: 'transform 0.7s',
+      fontSize: 18,
+    },
+    '& .MuiButton-root': {
+      '&:hover': {
+        '& .MuiSvgIcon-root': {
+          color: 'white',
+          transform: 'scale(1.1)',
+        },
+        '& .MuiTypography-root': {
+          transform: 'scale(1.05)',
+          color: 'white',
+        },
+      },
     },
   },
   buttonSection: {
@@ -39,8 +55,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 18,
         '& a': {
           textDecoration: 'none',
-          color: 'black',
-          
+          color: 'black',  
         },
         '&:hover': {
           transform: 'scale(1.1)',

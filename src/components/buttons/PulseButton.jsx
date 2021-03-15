@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     boxShadow: `0 0 0 0 ${theme.palette.secondary.main}80`,
     animation: `$pulse 1.5s ease infinite`,
-    margin: '35px 20px',
+    marginRight: '35px',
+    marginTop: '20px',
     zIndex: 2,
     '& .MuiSvgIcon-root': {
       paddingRight: 8,
