@@ -8,14 +8,23 @@ const useStyles = makeStyles((theme) =>
       textAlign: 'justify',
       '& .MuiTypography-h5': {
         color: 'black',
+        '@media only screen and (max-width:600px)': {
+
+        },
       },
       '& .MuiTypography-h6': {
         color: '#4d4d4d',
         fontSize: '19px',
+        '@media only screen and (max-width:600px)': {
+
+        },
       },
       '& .MuiTypography-body1': {
         color: '#808080',
         paddingTop: "5px",
+        '@media only screen and (max-width:600px)': {
+          fontSize: '13px',
+        },
       },
     },
   }),

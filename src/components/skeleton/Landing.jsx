@@ -10,6 +10,8 @@ import resume from '../../assets/documents/Zhao_Resume.pdf';
 const useStyles = makeStyles((theme) =>
   createStyles({
     background: {
+      // change if needed
+      paddingTop: '71px',
       display: 'grid',
       backgroundImage: `url(${wallpaper})`,
       // opacity: '0.0',
@@ -32,17 +34,16 @@ const useStyles = makeStyles((theme) =>
         color: "white",
       },
       '@media only screen and (max-width:600px)': {
+        top: '45%',
         '& .MuiTypography-h1': {
-          fontSize: '35px',
+          fontSize: '2.5em',
         },
         '& .MuiTypography-h2': {
           marginTop: '15px',
-          fontSize: '20px',
+          fontSize: '1.5em',
           marginBottom: '15px',
         },
-        '# .PulseButton': {
 
-        }
       },
     },
   }),

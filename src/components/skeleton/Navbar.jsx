@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
     '& .MuiTypography-root': {
       fontFamily: 'DotGothic16 !important',
       color: 'black',
-      fontFamily: 'DotGothic16',
       fontWeight: 'fontWeightBold',
       transition: 'transform 0.7s',
       fontSize: 18,
