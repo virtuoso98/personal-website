@@ -37,16 +37,11 @@ const Projects = () => {
   const iconMap = listMap(iconLabel, iconList)
 
   return (
-    <Grid container spacing={3} className={classes.root} id="projects">
-      <Grid item xs={2}></Grid>
-      <Grid item xs={8}>
-        <Typography variant="h2">
-          Projects
-        </Typography>
-      </Grid>
-      <Grid item xs={2}></Grid>
-      <Grid item xs={2}></Grid>
-      <Grid item xs={4}>
+    <Grid container spacing={0} className={classes.root} id="projects">
+      <Grid item xs={1} md={2}></Grid>
+      <Grid item xs={10} md={8}>
+      <Grid container spacing={3}>
+      <Grid item xs={12} md={6}>
         <ProjectCard 
         image={websitecover}
         name="Personal Website v1"
@@ -58,7 +53,7 @@ const Projects = () => {
         link="https://github.com/virtuoso98/personal-website"
         />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={6}>
         <ProjectCard 
         image={nexttonormal}
         name="Birthday Website"
@@ -71,8 +66,11 @@ const Projects = () => {
         iconAlignment="left"
         />
       </Grid>
-      <Grid item xs={2}></Grid>
+      </Grid>
+      </Grid>
+      <Grid item xs={1} md={2}></Grid>
     </Grid>
+
   );
 }
 
