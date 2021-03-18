@@ -26,39 +26,32 @@ const useStyles = makeStyles((theme) =>
     wrapper: {
       width: '100%',
       display: 'flex',
-      justifyContent: styleProps => styleProps.iconAlignment === 'left' ? 'flex-start' : 'space-evenly',
-      '& img': {
-        marginRight: styleProps => styleProps.iconAlignment  === 'left' ? 15 : 0,
-        marginLeft: styleProps => styleProps.iconAlignment  === 'left' ? 10 : 0,
-      },
+      justifyContent: 'space-evenly',
     },
   }),
 );
 
 
-const ProjectCard = ({ image, name, date, description, iconMap, iconLabel, link, iconAlignment='center' }) => {
-  const styleProps = {
-    iconAlignment: iconAlignment
-  }
-  
-  const classes = useStyles(styleProps);
+const ProjectCard = ({ image, name, date, description, iconMap, iconLabel, link }) => {
+
+  const classes = useStyles();
 
   const listItems = iconLabel.map((label) => {
     console.log(label);
     console.log(iconMap.get(label));
-    return(
-    <Tooltip placement="bottom" title={label} aria-label={label} arrow>
-      <img width="50" src={iconMap.get(label)}/>
-    </Tooltip>)
+    return (
+      <Tooltip placement="bottom" title={label} aria-label={label} arrow>
+        <img width="50" src={iconMap.get(label)} />
+      </Tooltip>)
   });
 
   const redirect = (url) => {
-      window.open(url);
-    }
-  
+    window.open(url);
+  }
+
   return (
     <Card elevation={5} className={classes.root}>
-      <ButtonBase onClick={()=>redirect(link)}>
+      <ButtonBase onClick={() => redirect(link)}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -76,7 +69,7 @@ const ProjectCard = ({ image, name, date, description, iconMap, iconLabel, link,
               {description}
             </Typography>
             <div className={classes.wrapper}>
-            {listItems}
+              {listItems}
             </div>
           </CardContent>
         </CardActionArea>

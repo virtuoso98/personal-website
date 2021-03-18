@@ -11,14 +11,17 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       paddingTop: '50px',
-      '& .MuiTypography-h2': {
-        '@media only screen and (max-width:600px)': {
-          fontSize: '3rem',
-        },
-      },
     },
     divider: {
       marginTop: '100px',
+    },
+    '@media only screen and (max-width:600px)': {
+      root: {
+        '& .MuiTypography-h2': {
+          fontSize: '3rem',
+        },
+      },
+
     },
   }),
 );

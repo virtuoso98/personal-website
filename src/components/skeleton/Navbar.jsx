@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 18,
         '& a': {
           textDecoration: 'none',
-          color: 'black',  
+          color: 'black',
         },
         '&:hover': {
           transform: 'scale(1.1)',
@@ -77,16 +77,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
-  const handleMenuOpen = () => {
-    setOpen(!open);
-  }
 
   return (
     <AppBar position="static" className={classes.appbar}>
       <Toolbar>
         <Grid container spacing={0}>
-          <Hidden mdDown>
+          <Hidden smDown>
             <Grid item xs={1}></Grid>
             <Grid item xs={2} className={classes.headerSection}>
               <Button href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
@@ -112,23 +108,11 @@ const Navbar = () => {
               <Button color="inherit">
                 <Typography><a href="#projects">Projects</a></Typography>
               </Button>
-              <Button color="inherit">
-                <Typography><a href="#hobbies">Hobbies</a></Typography>
-              </Button>
             </Grid>
             <Grid item xs={1}></Grid>
           </Hidden>
-          <Hidden lgUp >
-            <Grid item xs={8} className={classes.headerSection}>
-              <IconButton onClick={handleMenuOpen}>
-                <MenuIcon />
-                <DrawerNav />
-              </IconButton>
-              <Typography variant="h6">To be built</Typography>
-            </Grid>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={1} className={classes.buttonSection}>
-            </Grid>
+          <Hidden mdUp>
+            <DrawerNav />
           </Hidden>
         </Grid>
       </Toolbar>

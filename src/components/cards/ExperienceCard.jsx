@@ -8,21 +8,20 @@ const useStyles = makeStyles((theme) =>
       textAlign: 'justify',
       '& .MuiTypography-h5': {
         color: 'black',
-        '@media only screen and (max-width:600px)': {
-
-        },
       },
       '& .MuiTypography-h6': {
         color: '#4d4d4d',
-        fontSize: '19px',
-        '@media only screen and (max-width:600px)': {
-
-        },
+        fontSize: '19px'
       },
       '& .MuiTypography-body1': {
         color: '#808080',
-        paddingTop: "5px",
-        '@media only screen and (max-width:600px)': {
+        paddingTop: '5px',
+        
+      },
+    },
+    '@media only screen and (max-width:600px)': {
+      root: {
+        '& .MuiTypography-body1': {
           fontSize: '13px',
         },
       },
@@ -30,13 +29,13 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-const ExperienceCard = ({image, name, position, date, description}) => {
+const ExperienceCard = ({ image, name, position, date, description }) => {
   const classes = useStyles();
 
   return (
     <Card elevation={5} className={classes.root}>
       <CardActionArea>
-        <CardMedia 
+        <CardMedia
           component="img"
           height="210"
           image={image}

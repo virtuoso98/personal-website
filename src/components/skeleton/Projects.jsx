@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       paddingTop: '50px',
+      paddingBottom: '20px',
     },
   }),
 );
@@ -24,49 +25,54 @@ const useStyles = makeStyles((theme) =>
 const Projects = () => {
   const classes = useStyles();
   const iconLabel = ["Material-UI", "React", "Javascript", "AWS-S3", "CSS3", "HTML5"];
+  const iconLabel1 = ["Material-UI", "React", "AWS-S3"];
   const iconLabel2 = ["CSS3", "HTML5"];
   const iconList = [mui, reactjs, js, aws, css3, html5];
   const listMap = (labels, icons) => {
     const map = new Map();
-    for(let i = 0; i < labels.length; i++){
+    for (let i = 0; i < labels.length; i++) {
       map.set(labels[i], icons[i]);
     };
     return map;
   }
-  
+
   const iconMap = listMap(iconLabel, iconList)
 
   return (
     <Grid container spacing={0} className={classes.root} id="projects">
       <Grid item xs={1} md={2}></Grid>
       <Grid item xs={10} md={8}>
-      <Grid container spacing={3}>
-      <Grid item xs={12} md={6}>
-        <ProjectCard 
-        image={websitecover}
-        name="Personal Website v1"
-        date="Feb 2021"
-        description=
-        "This personal project was something that I undertook in order to explore Web Development and also hone my skills in effective design interfaces."
-        iconMap={iconMap}
-        iconLabel={iconLabel}
-        link="https://github.com/virtuoso98/personal-website"
-        />
-      </Grid>
-      <Grid item xs={12} md={6}>
-        <ProjectCard 
-        image={nexttonormal}
-        name="Birthday Website"
-        date="Jun 2020"
-        description=
-        "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him with other means!"
-        iconMap={iconMap}
-        iconLabel={iconLabel2}
-        link="https://virtuoso98.github.io/btim999.github-io/"
-        iconAlignment="left"
-        />
-      </Grid>
-      </Grid>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <Typography variant="h2">
+              Projects
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <ProjectCard
+              image={websitecover}
+              name="Personal Website v1"
+              date="Feb 2021"
+              description=
+              "This personal project was something that I undertook in order to explore Web Development and also hone my skills in effective design interfaces."
+              iconMap={iconMap}
+              iconLabel={iconLabel1}
+              link="https://github.com/virtuoso98/personal-website"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <ProjectCard
+              image={nexttonormal}
+              name="Birthday Website"
+              date="Jun 2020"
+              description=
+              "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him with other means!"
+              iconMap={iconMap}
+              iconLabel={iconLabel2}
+              link="https://virtuoso98.github.io/btim999.github-io/"
+            />
+          </Grid>
+        </Grid>
       </Grid>
       <Grid item xs={1} md={2}></Grid>
     </Grid>

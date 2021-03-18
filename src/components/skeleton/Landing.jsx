@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     background: {
       // change if needed
-      paddingTop: '71px',
+      paddingTop: '56px',
       display: 'grid',
       backgroundImage: `url(${wallpaper})`,
       // opacity: '0.0',
@@ -19,21 +19,23 @@ const useStyles = makeStyles((theme) =>
       position: 'relative',
       width: '100vw',
       maxWidth: '100%',
-      // zIndex: -1,
       height: '100vh',
     },
+
     content: {
       position: 'absolute',
       textAlign: 'center',
       top: '50%',
       left: '50%',
       width: '100%',
-      // zIndex: 1,
       transform: 'translate(-50%, -50%)',
       '& .MuiTypography-root': {
         color: "white",
       },
-      '@media only screen and (max-width:600px)': {
+    },
+
+    '@media only screen and (max-width:600px)': {
+      content: {
         top: '45%',
         '& .MuiTypography-h1': {
           fontSize: '2.5em',
@@ -43,8 +45,9 @@ const useStyles = makeStyles((theme) =>
           fontSize: '1.5em',
           marginBottom: '15px',
         },
+      }
 
-      },
+
     },
   }),
 );
@@ -63,6 +66,7 @@ const Landing = () => {
         <Typography variant="h2">
           Aspiring Software Engineer
           </Typography>
+
         <PulseButton
           buttonText={contacttext}
           icon={<MailIcon />}

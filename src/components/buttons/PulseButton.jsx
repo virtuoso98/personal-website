@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 8,
     },
   },
+
+
   '@keyframes pulse': {
     '0%': {
       transform: 'scale(0.85)',
@@ -31,6 +33,12 @@ const useStyles = makeStyles((theme) => ({
     '100%': {
       transform: 'scale(0.85)',
       boxShadow: `0 0 0 0 ${theme.palette.secondary.main}00`,
+    },
+  },
+
+  '@media only screen and (max-width:600px)': {
+    root: {
+      marginRight: '0px',
     },
   },
 }));

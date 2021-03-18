@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) =>
       '& img': {
         float: 'right',
         marginRight: '4vw',
-        marginBottom: '2vh',
+
       },
       '& .MuiFab-root': {
         marginBottom: '2vh',
@@ -50,6 +50,13 @@ const useStyles = makeStyles((theme) =>
     },
     divider: {
       marginTop: '50px',
+    },
+    '@media only screen and (max-width:600px)': {
+      root: {
+        '& .MuiTypography-body1': {
+          lineHeight: '1.85',
+        },
+      },
     },
   }),
 );
@@ -90,24 +97,27 @@ const Research = () => {
                           Click this card to find out more about the research!
                     </Typography>
                       </CardContent>
-                      <div className={classes.item}>
-
-                        <img src={science} width="250" height="45" />
-                        <Fab color="secondary" href={paper}>
-                          <GetAppIcon />
-                        </Fab>
-                      </div>
                     </Grid>
                   </Grid>
                 </CardActionArea>
               </ButtonBase>
+              <CardContent>
+                <div className={classes.item}>
+                  <img src={science} width="250" height="45" />
+                  <Fab color="secondary" href={paper}>
+                    <GetAppIcon />
+                  </Fab>
+                </div>
+              </CardContent>
             </Card>
+          </Grid>
+          <Grid item xs={12} className={classes.divider}
+          ><hr />
           </Grid>
         </Grid>
       </Grid>
       <Grid item xs={1} md={2}></Grid>
     </Grid>
-
   )
 }
 
