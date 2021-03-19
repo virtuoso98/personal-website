@@ -21,6 +21,12 @@ const useStyles = makeStyles((theme) =>
     },
     '@media only screen and (max-width:600px)': {
       root: {
+        '& .MuiTypography-h5': {
+          fontSize: '18px',
+        },
+        '& .MuiTypography-h6': {
+          fontSize: '17px',
+        },
         '& .MuiTypography-body1': {
           fontSize: '13px',
         },

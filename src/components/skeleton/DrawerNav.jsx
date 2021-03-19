@@ -1,24 +1,15 @@
 import React, { useState, setState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Drawer, List, ListItem, Typography, Grid, Button, IconButton } from '@material-ui/core';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Grid, Button, IconButton, Link } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import WorkIcon from '@material-ui/icons/Work';
 import BuildIcon from '@material-ui/icons/Build';
-import MailIcon from '@material-ui/icons/Mail';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import DescriptionIcon from '@material-ui/icons/Description';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 const useStyles = makeStyles((theme) => ({
-  appbar: {
-    justifyContent: 'center',
-    backgroundColor: 'pink',
-    flexGrow: 1,
-    position: 'fixed',
-  },
   headerSection: {
     display: 'flex',
     textAlign: 'left',
@@ -32,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 'fontWeightBold',
       transition: 'transform 0.7s',
       fontSize: 18,
+    },
+    '& .MuiListItemText-root': {
+      fontFamily: 'DotGothic16 !important',
+      color: 'black',
     },
     '& .MuiButton-root': {
       '&:hover': {
@@ -86,33 +81,75 @@ const useStyles = makeStyles((theme) => ({
 const DrawerNav = (props) => {
   const classes = useStyles();
 
-  const toggleDrawer = () => {
-    console.log("clicked")
-  }
+  const [open, setOpen] = useState(false);
 
-  const list = (anchor) => {
-    <div
-      role="presentation"
-      onClick={toggleDrawer()}
-      onKeyDown={toggleDrawer()}
-    >
-      <List>
-        <ListItem>
-          
-        </ListItem>
-      </List>
-    </div>
+  const toggleDrawer = () => {
+    setOpen(!open);
   }
 
   return (
     <Grid container spacing={0}>
-      <React.Fragment>
       <Grid item xs={10} className={classes.headerSection}>
-        <IconButton onClick={toggleDrawer()}>
+        <IconButton onClick={() => toggleDrawer()}>
           <MenuIcon />
         </IconButton>
+        <Drawer
+          variant="temporary"
+          open={open}
+          onClose={() => toggleDrawer()}
+        >
+          <Link>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText primary="Home"/>
+              </ListItem>
+            </List>
+          </Link>
+          <Link>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <InfoIcon />
+                </ListItemIcon>
+                <ListItemText primary="About"/>
+              </ListItem>
+            </List>
+          </Link>
+          <Link>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <WorkIcon />
+                </ListItemIcon>
+                <ListItemText primary="Experience"/>
+              </ListItem>
+            </List>
+          </Link>
+          <Link>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <LibraryBooksIcon/>
+                </ListItemIcon>
+                <ListItemText primary="Research"/>
+              </ListItem>
+            </List>
+          </Link>
+          <Link>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <BuildIcon />
+                </ListItemIcon>
+                <ListItemText primary="Projects"/>
+              </ListItem>
+            </List>
+          </Link>
+        </Drawer>
       </Grid>
-      </React.Fragment>
       <Grid item xs={2} className={classes.buttonSection}>
         <Button href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
           <GitHubIcon />
