@@ -1,5 +1,5 @@
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Hidden } from '@material-ui/core';
 import DescriptionIcon from '@material-ui/icons/Description';
 import MailIcon from '@material-ui/icons/Mail';
 import wallpaper from '../../assets/images/wallpaper2.jpg';
@@ -72,6 +72,9 @@ const Landing = () => {
           icon={<MailIcon />}
           link="mailto:k.zhaoyuan98@u.yale-nus.edu.sg"
         />
+        <Hidden mdUp>
+        <br/>
+        </Hidden>
         <PulseButton
           buttonText={resumetext}
           icon={<DescriptionIcon />}

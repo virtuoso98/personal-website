@@ -40,8 +40,8 @@ const Projects = () => {
 
   return (
     <Grid container spacing={0} className={classes.root} id="projects">
-      <Grid item xs={1} md={2}></Grid>
-      <Grid item xs={10} md={8}>
+      <Grid item xs={1} lg={2}></Grid>
+      <Grid item xs={10} lg={8}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography variant="h2">
@@ -74,7 +74,7 @@ const Projects = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={1} md={2}></Grid>
+      <Grid item xs={1} lg={2}></Grid>
     </Grid>
 
   );

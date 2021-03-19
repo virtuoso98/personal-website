@@ -81,8 +81,8 @@ const Research = () => {
 
   return (
     <Grid container className={classes.root} id="research">
-      <Grid item xs={1} md={2}></Grid>
-      <Grid item xs={10} md={8}>
+      <Grid item xs={1} lg={2}></Grid>
+      <Grid item xs={10} lg={8}>
         <Grid container>
           <Grid item xs={12} className={classes.header}>
             <Typography variant="h2">
@@ -99,7 +99,7 @@ const Research = () => {
                         <Typography variant="h5">
                           Solubility prediction using ML & first-principles methods
                     </Typography>
-                    <Hidden smDown>
+                    <Hidden xsDown>
                         <Typography variant="body1">
                           During the summer break of 2020, I participated in a research project with Prof Zhuang Bilin. This entailed 2 main tasks.
                           The first task was to evaluate the viability of using a first-principles equation to model the solubility of polar and non-polar
@@ -133,7 +133,7 @@ const Research = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={1} md={2}></Grid>
+      <Grid item xs={1} lg={2}></Grid>
     </Grid>
   )
 }

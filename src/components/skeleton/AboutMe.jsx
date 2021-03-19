@@ -54,7 +54,8 @@ const useStyles = makeStyles((theme) =>
       },
       profile: {
         '@media only screen and (max-width:600px)': {
-          paddingTop: '5vh',
+          paddingTop: '0vh',
+          paddingBottom: '7vh',
           maxWidth: '100%',
           display: 'block',
           height: 'auto',
@@ -72,8 +73,8 @@ const AboutMe = () => {
     <div>
       <Hidden xsDown>
         <Grid container className={classes.root} id="about">
-          <Grid item xs={1} md={2}></Grid>
-          <Grid item xs={10} md={8}>
+          <Grid item xs={1} lg={2}></Grid>
+          <Grid item xs={10} lg={8}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Typography variant="h2">
@@ -132,7 +133,7 @@ const AboutMe = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={1} md={2}></Grid>
+          <Grid item xs={1} lg={2}></Grid>
         </Grid>
 
       </Hidden>
@@ -146,6 +147,11 @@ const AboutMe = () => {
                   About me
             </Typography>
               </Grid>
+              <Grid item xs={1}></Grid>
+              <Grid item xs={10}>
+                <img src={profile} className={classes.profile} />
+              </Grid>
+              <Grid item xs={1}></Grid>
               <div className={classes.text}>
                 <Typography variant="body1">
                   Hi! おはよう。你好！I'm Zhao, currently studying in Yale-NUS College.
@@ -159,11 +165,34 @@ const AboutMe = () => {
                   In the short term, I'd like to explore opportunities related to software engineering.
             </Typography>
               </div>
-              <Grid item xs={1}></Grid>
-              <Grid item xs={10}>
-                <img src={profile} className={classes.profile} />
+              <Grid item xs={12}>
+              <div className={classes.buttonGroup}>
+                    <ExpandButton
+                      icon={linkedin}
+                      text="Connect"
+                      color="#00a0dc"
+                      link="https://www.linkedin.com/in/zhaooo/"
+                    />
+                    <ExpandButton
+                      icon={instagram}
+                      text="Follow"
+                      color="#ffccff"
+                      link="https://www.instagram.com/zhaoooo__/"
+                    />
+                    <ExpandButton
+                      icon={medium}
+                      text="Read"
+                      color="white"
+                      link="https://medium.com/"
+                    />
+                    <ExpandButton
+                      icon={facebook}
+                      text="Add Me!"
+                      color="#2AA4F4"
+                      link="https://www.facebook.com/zhaooooooooo/"
+                    />
+                  </div>
               </Grid>
-              <Grid item xs={1}></Grid>
             </Grid>
             <Grid item xs={12}>
               <hr className={classes.divider}></hr>

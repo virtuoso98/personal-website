@@ -17,16 +17,9 @@ const useStyles = makeStyles((theme) => ({
     '& .MuiSvgIcon-root': {
       paddingRight: 10,
     },
-    '& .MuiTypography-root': {
-      fontFamily: 'DotGothic16 !important',
-      color: 'black',
-      fontWeight: 'fontWeightBold',
-      transition: 'transform 0.7s',
-      fontSize: 18,
-    },
-    '& .MuiListItemText-root': {
-      fontFamily: 'DotGothic16 !important',
-      color: 'black',
+   
+    '& .MuiDrawer-root': {
+      backgroundColor: 'pink',
     },
     '& .MuiButton-root': {
       '&:hover': {

@@ -54,6 +54,25 @@ const useStyles = makeStyles((theme) => ({
       transition: 'max-width 1s',
     },
   },
+  '@media only screen and (max-width:600px)':{
+    expandingButton: {
+      padding: '8px',
+      borderRadius: '44px',
+      maxWidth: '60px',
+      '& img': {
+        width: '44px',
+      },
+      '& span':{
+        margin: '8px',
+      },
+      '&:hover': {
+        maxWidth: '60px',
+        '& span': {
+          maxWidth: '0%',
+        }
+      },
+    },
+  },
 }));
 
 
