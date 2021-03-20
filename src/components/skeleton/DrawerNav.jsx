@@ -1,6 +1,6 @@
 import React, { useState, setState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Grid, Button, IconButton, Link } from '@material-ui/core';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Grid, IconButton, Link } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import WorkIcon from '@material-ui/icons/Work';
@@ -17,10 +17,8 @@ const useStyles = makeStyles((theme) => ({
     '& .MuiSvgIcon-root': {
       paddingRight: 10,
     },
-   
-    '& .MuiDrawer-root': {
-      backgroundColor: 'pink',
-    },
+
+
     '& .MuiButton-root': {
       '&:hover': {
         '& .MuiSvgIcon-root': {
@@ -68,6 +66,22 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  drawerPaper: {
+    backgroundColor: 'pink',
+    paddingRight: '20px',
+    '& .MuiTypography-root': {
+      color: 'black',
+      fontFamily: 'DotGothic16',
+      fontWeight: 'fontWeightBold',
+      fontSize: 18,
+
+      '&.MuiLink-underlineHover:hover': {
+        textDecoration: 'none',
+        color: 'black',
+      }
+    }
+  },
 }));
 
 
@@ -90,63 +104,64 @@ const DrawerNav = (props) => {
           variant="temporary"
           open={open}
           onClose={() => toggleDrawer()}
+          classes={{
+            paper: classes.drawerPaper
+          }}
+          anchor="left"
         >
-          <Link>
-            <List>
+          <List>
+            <div
+            onClick={()=>toggleDrawer()}
+            >
+            <Link href="#home">
               <ListItem>
                 <ListItemIcon>
                   <HomeIcon />
                 </ListItemIcon>
-                <ListItemText primary="Home"/>
+                <ListItemText primary="Home" />
               </ListItem>
-            </List>
-          </Link>
-          <Link>
-            <List>
+            </Link>
+            <Link href="#about">
               <ListItem>
                 <ListItemIcon>
                   <InfoIcon />
                 </ListItemIcon>
-                <ListItemText primary="About"/>
+                <ListItemText primary="About" />
               </ListItem>
-            </List>
-          </Link>
-          <Link>
-            <List>
+            </Link>
+            <Link href="#experiences">
               <ListItem>
                 <ListItemIcon>
                   <WorkIcon />
                 </ListItemIcon>
-                <ListItemText primary="Experience"/>
+                <ListItemText primary="Experience" />
               </ListItem>
-            </List>
-          </Link>
-          <Link>
-            <List>
+            </Link>
+            <Link href='#research'>
               <ListItem>
                 <ListItemIcon>
-                  <LibraryBooksIcon/>
+                  <LibraryBooksIcon />
                 </ListItemIcon>
-                <ListItemText primary="Research"/>
+                <ListItemText primary="Research" />
               </ListItem>
-            </List>
-          </Link>
-          <Link>
-            <List>
+            </Link>
+            <Link href="#projects">
               <ListItem>
                 <ListItemIcon>
                   <BuildIcon />
                 </ListItemIcon>
-                <ListItemText primary="Projects"/>
+                <ListItemText primary="Projects" />
               </ListItem>
-            </List>
-          </Link>
+            </Link>
+            </div>
+          </List>
+          
         </Drawer>
       </Grid>
       <Grid item xs={2} className={classes.buttonSection}>
-        <Button href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
+        <IconButton href='https://github.com/virtuoso98/' target='_blank' rel='noopener' aria-label='GitHub'>
           <GitHubIcon />
-        </Button>
+        </IconButton>
       </Grid>
     </Grid>
   )

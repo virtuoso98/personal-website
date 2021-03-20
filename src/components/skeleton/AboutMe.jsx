@@ -124,7 +124,9 @@ const AboutMe = () => {
               </Grid>
               <Grid item xs={4}>
                 <div className={classes.next}>
-                  <img src={profile} className={classes.profile} />
+                  <img src={profile} 
+                  className={classes.profile} 
+                  alt="Zhao Yuan's profile picture"/>
                 </div>
               </Grid>
             </Grid>
@@ -183,7 +185,7 @@ const AboutMe = () => {
                       icon={medium}
                       text="Read"
                       color="white"
-                      link="https://medium.com/"
+                      link="https://medium.com/@zhaoooo/"
                     />
                     <ExpandButton
                       icon={facebook}

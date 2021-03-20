@@ -58,7 +58,7 @@ const Landing = () => {
   const contacttext = "Contact";
 
   return (
-    <div className={classes.background} id="home">
+    <div className={classes.background} id="home" aria-label="Kimi no na wa wallpaper">
       <div className={classes.content}>
         <Typography variant="h1">
           Koa Zhao Yuan

@@ -19,6 +19,13 @@ const useStyles = makeStyles((theme) =>
         
       },
     },
+    imgContainer: {
+      padding: 0,
+      height: '210px',
+      '& .MuiCardMedia-img': {
+        objectFit: 'none'
+      }
+    },
     '@media only screen and (max-width:600px)': {
       root: {
         '& .MuiTypography-h5': {
@@ -41,11 +48,14 @@ const ExperienceCard = ({ image, name, position, date, description }) => {
   return (
     <Card elevation={5} className={classes.root}>
       <CardActionArea>
+        {/* <CardContent className={classes.imgContainer}> */}
         <CardMedia
+          alt = {name}
           component="img"
           height="210"
           image={image}
         />
+        {/* </CardContent> */}
         <CardContent>
           <Typography variant="h5">
             {name}

@@ -120,7 +120,7 @@ const Research = () => {
               </ButtonBase>
               <CardContent>
                 <div className={classes.item}>
-                  <img src={science} width="250" height="45" />
+                  <img src={science} width="250" height="45" alt="Science Advances"/>
                   <Fab color="secondary" href={paper}>
                     <GetAppIcon />
                   </Fab>

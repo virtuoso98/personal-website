@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       paddingTop: '50px',
-      paddingBottom: '20px',
+      paddingBottom: '60px',
     },
   }),
 );

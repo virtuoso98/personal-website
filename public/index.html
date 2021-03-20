@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!-- edit to reflect ideal website description -->
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!-- For google to index websites -->
-    <meta name = "robots" content = "index, follow"/>
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-    <!-- Open Graph Protocol -->
-    <!-- Twitter -->
-    <!-- Favicons -->
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!-- Android Chrome Icons -->
-    <!-- CSS (Any fonts or external stuff) -->
-    <!-- Google Analytics -->
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <title>Koa Zhao Yuan | Software Engineer, Mathematician</title>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Zhao Yuan is an undergraduate from Yale-NUS College that enjoys building software to enhance other's lives. He is familiar with web technologies such as React and Flask. In his free time, he runs, proves mathematical theorems and catches up on anime." />
+  <!-- edit to reflect ideal website description -->
+  <!-- For google to index websites -->
+  <meta name="robots" content="index, follow" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Open Graph Protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.kzhaoyuan.com/" />
+  <meta property="og:site_name" content="Koa Zhao Yuan" />
+  <meta property="og:title" content="Software Engineer | Mathematician" />
+  <meta property="og:description"
+    content="Zhao Yuan is an undergraduate from Yale-NUS College that enjoys building software to enhance other's lives. He is familiar with web technologies such as React and Flask. In his free time, he runs, proves mathematical theorems and catches up on anime.">
+  <meta property="og:image" content="<%= require('../src/assets/images/card.png') %>" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.kzhaoyuan.com/" />
+  <meta property="twitter:title" content="Software Engineer | Mathematician" />
+  <meta property="twitter:description"
+    content="Zhao Yuan is an undergraduate from Yale-NUS College that enjoys building software to enhance other's lives. He is familiar with web technologies such as React and Flask. In his free time, he runs, proves mathematical theorems and catches up on anime." />
+  <meta property="twitter:image" content="<%= require('../src/assets/images/card.png') %>" />
+  <meta property="twitter:site" content="@zhaoooo__" />
+  <meta property="twitter:creator" content="@zhaoooo__" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="48x48" href="%PUBLIC_URL%/logo48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/logo72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="%PUBLIC_URL%/logo96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/logo144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/logo512.png">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- Android Chrome Icons -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167555777-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167555777-2');
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

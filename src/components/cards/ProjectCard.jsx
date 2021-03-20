@@ -54,6 +54,7 @@ const ProjectCard = ({ image, name, date, description, iconMap, iconLabel, link 
       <ButtonBase onClick={() => redirect(link)}>
         <CardActionArea>
           <CardMedia
+            alt = {name}
             component="img"
             height="280"
             image={image}
