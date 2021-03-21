@@ -54,7 +54,7 @@ const Projects = () => {
               name="Personal Website v1"
               date="Feb 2021"
               description=
-              "This personal project was something that I undertook in order to explore Web Development and also hone my skills in effective design interfaces."
+              "This personal project was something that I undertook in order to explore Web Development and also hone skills in quality design interfaces."
               iconMap={iconMap}
               iconLabel={iconLabel1}
               link="https://github.com/virtuoso98/personal-website"
@@ -66,7 +66,7 @@ const Projects = () => {
               name="Birthday Website"
               date="Jun 2020"
               description=
-              "During Singapore's Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Therefore, I surprised him with other means!"
+              "During Covid-19 Circuit Breaker, I was unable to celebrate my friend's birthday physically. Hence, I surprised him with other means! (Desktop only)"
               iconMap={iconMap}
               iconLabel={iconLabel2}
               link="https://virtuoso98.github.io/btim999.github-io/"

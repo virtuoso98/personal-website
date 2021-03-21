@@ -33,6 +33,8 @@ const useStyles = makeStyles((theme) =>
         color: "white",
       },
     },
+    
+    
 
     '@media only screen and (max-width:600px)': {
       content: {
@@ -45,8 +47,7 @@ const useStyles = makeStyles((theme) =>
           fontSize: '1.5em',
           marginBottom: '15px',
         },
-      }
-
+      },
 
     },
   }),

@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       transition: 'max-width 1s',
     },
   },
-  '@media only screen and (max-width:600px)':{
+  '@media only screen and (max-width:760px)':{
     expandingButton: {
       padding: '8px',
       borderRadius: '44px',
