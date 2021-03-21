@@ -41,7 +41,7 @@ const ProjectCard = ({ image, name, date, description, iconMap, iconLabel, link 
     console.log(iconMap.get(label));
     return (
       <Tooltip placement="bottom" title={label} aria-label={label} arrow>
-        <img width="50" src={iconMap.get(label)} />
+        <img width="50" height="50" src={iconMap.get(label)} />
       </Tooltip>)
   });
 

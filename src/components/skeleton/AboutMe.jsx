@@ -122,7 +122,7 @@ const AboutMe = () => {
                       icon={medium}
                       text="Read"
                       color="white"
-                      link="https://medium.com/"
+                      link="https://medium.com/@zhaoooo"
                     />
                     <ExpandButton
                       icon={facebook}
