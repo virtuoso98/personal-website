@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       transition: 'max-width 1s',
     },
   },
-  '@media only screen and (max-width:760px)':{
+  '@media only screen and (max-width:760px)': {
     expandingButton: {
       padding: '8px',
       borderRadius: '44px',
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
       '& img': {
         width: '44px',
       },
-      '& span':{
+      '& span': {
         margin: '8px',
       },
       '&:hover': {
@@ -86,11 +86,11 @@ const ExpandButton = ({ icon, text, color, link }) => {
   const redirect = () => {
     window.open(link);
   }
-  
+
   return (
     <button className={classes.expandingButton} onClick={() => redirect()}>
       <img src={icon} width="50" />
-      <span> 
+      <span>
         {text}
       </span>
     </button>

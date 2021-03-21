@@ -99,20 +99,20 @@ const Research = () => {
                         <Typography variant="h5">
                           Solubility prediction using ML & first-principles methods
                     </Typography>
-                    <Hidden xsDown>
-                        <Typography variant="body1">
-                          During the summer break of 2020, I participated in a research project with Prof Zhuang Bilin. This entailed 2 main tasks.
-                          The first task was to evaluate the viability of using a first-principles equation to model the solubility of polar and non-polar
-                          solvents. The second task entailed using Machine Learning methods in order to predict solubility of various compounds.
-                          Click this card to find out more!
+                        <Hidden xsDown>
+                          <Typography variant="body1">
+                            During the summer break of 2020, I participated in a research project with Prof Zhuang Bilin. This entailed 2 main tasks.
+                            The first task was to evaluate the viability of using a first-principles equation to model the solubility of polar and non-polar
+                            solvents. The second task entailed using Machine Learning methods in order to predict solubility of various compounds.
+                            Click this card to find out more!
                     </Typography>
-                    </Hidden>
-                    <Hidden smUp>
-                        <Typography variant="body1">
-                          In this research project, I investigated the viability of 2 things: using a first-principles equation to model the solubility of polar and non-polar
-                          solvents and Machine Learning methods in order to predict solubility of various compounds. Click this card to find out more!
+                        </Hidden>
+                        <Hidden smUp>
+                          <Typography variant="body1">
+                            In this research project, I investigated the viability of 2 things: using a first-principles equation to model the solubility of polar and non-polar
+                            solvents and Machine Learning methods in order to predict solubility of various compounds. Click this card to find out more!
                     </Typography>
-                    </Hidden>
+                        </Hidden>
                       </CardContent>
                     </Grid>
                   </Grid>
@@ -120,7 +120,7 @@ const Research = () => {
               </ButtonBase>
               <CardContent>
                 <div className={classes.item}>
-                  <img src={science} width="250" height="45" alt="Science Advances"/>
+                  <img src={science} width="250" height="45" alt="Science Advances" />
                   <Fab color="secondary" href={paper}>
                     <GetAppIcon />
                   </Fab>
