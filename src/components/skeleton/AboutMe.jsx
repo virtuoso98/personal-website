@@ -45,11 +45,22 @@ const useStyles = makeStyles((theme) =>
       marginTop: '50px',
       marginBottom: '-45px',
     },
-    '@media only screen and (max-width:600px)': {
+
+    '@media only screen and (max-width:760px)': {
       text: {
         '& .MuiTypography-body1': {
-          fontSize: '0.8em',
-          lineHeight: '1.5',
+          fontSize: '0.55em',
+          lineHeight: '1.3',
+        },
+      },
+
+
+      '@media only screen and (max-width:600px)': {
+        text: {
+          '& .MuiTypography-body1': {
+            fontSize: '0.8em',
+            lineHeight: '1.5',
+          }
         },
       },
       profile: {
@@ -124,9 +135,9 @@ const AboutMe = () => {
               </Grid>
               <Grid item xs={4}>
                 <div className={classes.next}>
-                  <img src={profile} 
-                  className={classes.profile} 
-                  alt="Zhao Yuan's profile picture"/>
+                  <img src={profile}
+                    className={classes.profile}
+                    alt="Zhao Yuan's profile picture" />
                 </div>
               </Grid>
             </Grid>
@@ -168,32 +179,32 @@ const AboutMe = () => {
             </Typography>
               </div>
               <Grid item xs={12}>
-              <div className={classes.buttonGroup}>
-                    <ExpandButton
-                      icon={linkedin}
-                      text="Connect"
-                      color="#00a0dc"
-                      link="https://www.linkedin.com/in/zhaooo/"
-                    />
-                    <ExpandButton
-                      icon={instagram}
-                      text="Follow"
-                      color="#ffccff"
-                      link="https://www.instagram.com/zhaoooo__/"
-                    />
-                    <ExpandButton
-                      icon={medium}
-                      text="Read"
-                      color="white"
-                      link="https://medium.com/@zhaoooo/"
-                    />
-                    <ExpandButton
-                      icon={facebook}
-                      text="Add Me!"
-                      color="#2AA4F4"
-                      link="https://www.facebook.com/zhaooooooooo/"
-                    />
-                  </div>
+                <div className={classes.buttonGroup}>
+                  <ExpandButton
+                    icon={linkedin}
+                    text="Connect"
+                    color="#00a0dc"
+                    link="https://www.linkedin.com/in/zhaooo/"
+                  />
+                  <ExpandButton
+                    icon={instagram}
+                    text="Follow"
+                    color="#ffccff"
+                    link="https://www.instagram.com/zhaoooo__/"
+                  />
+                  <ExpandButton
+                    icon={medium}
+                    text="Read"
+                    color="white"
+                    link="https://medium.com/@zhaoooo/"
+                  />
+                  <ExpandButton
+                    icon={facebook}
+                    text="Add Me!"
+                    color="#2AA4F4"
+                    link="https://www.facebook.com/zhaooooooooo/"
+                  />
+                </div>
               </Grid>
             </Grid>
             <Grid item xs={12}>

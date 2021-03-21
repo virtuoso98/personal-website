@@ -33,8 +33,17 @@ const useStyles = makeStyles((theme) =>
         color: "white",
       },
     },
-    
-    
+
+    '@media only screen and (max-width:760px)': {
+      content: {
+        '& .MuiTypography-h1': {
+          fontSize: '5em',
+        },
+        '& .MuiTypography-h2': {
+          fontSize: '2.75em',
+        },
+      },
+    },
 
     '@media only screen and (max-width:600px)': {
       content: {
@@ -48,8 +57,8 @@ const useStyles = makeStyles((theme) =>
           marginBottom: '15px',
         },
       },
-
     },
+
   }),
 );
 
@@ -74,7 +83,7 @@ const Landing = () => {
           link="mailto:k.zhaoyuan98@u.yale-nus.edu.sg"
         />
         <Hidden mdUp>
-        <br/>
+          <br />
         </Hidden>
         <PulseButton
           buttonText={resumetext}
