@@ -54,7 +54,7 @@ const Experiences = () => {
               image={campus}
               name="Yale-NUS College"
               position="Undergraduate"
-              date="Aug 2020 - May 2023"
+              date="Aug 2019 - May 2023"
               description=
               "Liberal Arts student by day, Coder by night. This school gave me free reign to explore modules in Philosophy, Literature and Modern Social Thought."
             />
