@@ -36,4 +36,5 @@ In the short term, I plan to do the following:
 
 ## :memo: Changelog
 23 Feb 2021 - Project Initiated
+
 21 Mar 2021 - Website Deployed
