@@ -15,7 +15,7 @@
 </p>
 
 ![alt text](https://github.com/virtuoso98/personal-website/blob/main/src/assets/images/websitecover.png "Landing Page")
-### 
+
 
 ## 🙋‍ Foreword
 Thank you for dropping by! This is my first project which I used to learn React. While I have deployed the website, there is still much to do for me. From adding new features to discovering bugs, I might have made some slip-ups. Therefore, if I have coded in a sub-optimal manner, please send me a message and I will look into it.
