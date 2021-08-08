@@ -1,6 +1,6 @@
-import React, { useState, setState } from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Grid, IconButton, Link } from '@material-ui/core';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Grid, IconButton, Link } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import WorkIcon from '@material-ui/icons/Work';

@@ -1,11 +1,13 @@
 import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { Grid, GridList, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import ExperienceCard from '../cards/ExperienceCard';
 import campus from '../../assets/images/campus.jpg';
 import mystery from '../../assets/images/mystery.jpg';
 import nyjc from '../../assets/images/nyjc.png';
 import smartjen from '../../assets/images/smartjen.png';
+import datature from '../../assets/images/datature.jpg'
+import jobkred from '../../assets/images/jobkred.png'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -65,7 +67,25 @@ const Experiences = () => {
               name="SmartJen"
               position="R&D Intern"
               date="Dec 2020- Jan 2021"
-              description="I implemented a character segmentation algorithm for handwritten mathematical expressions and deployed a working prototype on Flask."
+              description="I implemented a character segmentation algorithm for handwritten mathematical expressions and deployed a working prototype on Flask. This model achieved 90% accuracy!"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <ExperienceCard
+              image={datature}
+              name="Datature"
+              position="Full-stack Engineer Intern"
+              date="May 2021 - Jul 2021"
+              description="Worked on various front-end annotator features of main product and Portal, a free-open source app to help evaluate CV Model performance using Next.js, Leaflet.js and Blueprint.js."
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <ExperienceCard
+              image={jobkred}
+              name="JobKred"
+              position="Software Engineer Intern"
+              date="Aug 2021- Present"
+              description="Currently, I am working on the backend and deployment side of the company's main product using Docker and Kotlin Springboot."
             />
           </Grid>
           <Grid item xs={12} md={6}>
