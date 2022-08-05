@@ -74,7 +74,7 @@ const Landing = () => {
           Koa Zhao Yuan
           </Typography>
         <Typography variant="h2">
-          Aspiring Software Engineer
+          Aspiring Data Scientist
           </Typography>
 
         <PulseButton

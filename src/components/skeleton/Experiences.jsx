@@ -3,11 +3,12 @@ import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
 import ExperienceCard from "../cards/ExperienceCard";
 import campus from "../../assets/images/campus.jpg";
-import mystery from "../../assets/images/mystery.jpg";
 import nyjc from "../../assets/images/nyjc.png";
 import smartjen from "../../assets/images/smartjen.png";
 import datature from "../../assets/images/datature.jpg";
 import jobkred from "../../assets/images/jobkred.png";
+import creditSuisse from "../../assets/images/credit-suisse.jpg";
+// import mystery from "../../assets/images/mystery.jpg";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -79,17 +80,17 @@ const Experiences = () => {
               image={jobkred}
               name="JobKred"
               position="Software Engineer Intern"
-              date="Aug 2021- Present"
+              date="Aug 2021 - Dec 2021"
               description="Currently, I am working on the backend and front-end automated testing side of the company's main product using Cypress.js and Kotlin Springboot."
             />
           </Grid>
           <Grid item xs={12} md={6}>
             <ExperienceCard
-              image={mystery}
-              name="Future Company"
-              position="To be determined"
-              date="In the future"
-              description="Want to be featured on this website? Hire me now! On a more serious note, I'm open to summer Machine Learning and Software Engineering roles."
+              image={creditSuisse}
+              name="Credit Suisse"
+              position="Data Science Intern"
+              date="May 2022 - Jul 2022"
+              description="Learnt about Natural Language Processing applied to Compliance "
             />
           </Grid>
         </Grid>

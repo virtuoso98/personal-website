@@ -137,7 +137,7 @@ const AboutMe = () => {
                 <div className={classes.next}>
                   <img src={profile}
                     className={classes.profile}
-                    alt="Zhao Yuan's profile picture" />
+                    alt="Zhao Yuan's avatar" />
                 </div>
               </Grid>
             </Grid>
