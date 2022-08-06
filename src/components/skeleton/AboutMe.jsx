@@ -103,7 +103,7 @@ const AboutMe = () => {
                 </Typography>
                 <Typography variant="body1">
                   Currently, I am exposed to web development, scientific research, optical character recognition and Natural Language Processing.
-                  Right now, I'd like to explore opportunities related to software engineering.
+                  Right now, I'd like to explore opportunities related to ML engineering.
                 </Typography>
                   <div className={classes.buttonGroup}>
                     <ExpandButton
@@ -175,7 +175,7 @@ const AboutMe = () => {
                 </Typography>
                 <Typography variant="body1">
                   Currently, I am exposed to web development, scientific research, optical character recognition and Natural Language Processing.
-                  Right now, I'd like to explore opportunities related to software engineering.
+                  Right now, I'd like to explore opportunities related to ML engineering.
                 </Typography>
               </div>
               <Grid item xs={12}>
