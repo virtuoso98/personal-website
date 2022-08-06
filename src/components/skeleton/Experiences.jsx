@@ -90,7 +90,7 @@ const Experiences = () => {
               name="Credit Suisse"
               position="Data Science Intern"
               date="May 2022 - Jul 2022"
-              description="Learnt about Natural Language Processing applied to Compliance "
+              description="Learnt about Natural Language Processing applied to Compliance checks in banks. Switched from Software Engineering to Data Science!"
             />
           </Grid>
         </Grid>

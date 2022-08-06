@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Grid, Hidden } from '@material-ui/core';
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 import profile from '../../assets/images/avatar.png';
 import ExpandButton from '../buttons/ExpandButton';
 import linkedin from '../../assets/svg-icons/linkedin.svg';
@@ -94,17 +94,17 @@ const AboutMe = () => {
               </Grid>
               <Grid item xs={8}>
                 <div className={classes.text}>
-                  <Typography variant="body1">
-                    Hi! おはよう。你好！I'm Zhao, currently studying in Yale-NUS College.
-                  </Typography>
-                  <Typography variant="body1">
-                    I enjoy creating things that bring people happiness and convenience. Be it creating a birthday website for my friend during the Covid-19
-                    pandemic or any application in particular, my goal is to always build things that enhance people's experience with technology.
-                  </Typography>
-                  <Typography variant="body1">
-                    Currently, my experience and competencies lie in web development, scientific research and optical character recognition.
-                    In the short term, I'd like to explore opportunities related to software engineering.
-            </Typography>
+                <Typography variant="body1">
+                  Hi! おはよう。你好！I'm Zhao, currently studying in Yale-NUS College.
+                </Typography>
+                <Typography variant="body1">
+                  I used to be a software engineer that tinkered with projects like creating a birthday website for my friend during the Covid-19
+                  pandemic. However, Math has taken over and I'd love to see how it can be applied to Data Science to create business value.
+                </Typography>
+                <Typography variant="body1">
+                  Currently, I am exposed to web development, scientific research, optical character recognition and Natural Language Processing.
+                  Right now, I'd like to explore opportunities related to software engineering.
+                </Typography>
                   <div className={classes.buttonGroup}>
                     <ExpandButton
                       icon={linkedin}
@@ -162,21 +162,21 @@ const AboutMe = () => {
               </Grid>
               <Grid item xs={1}></Grid>
               <Grid item xs={10}>
-                <img src={profile} className={classes.profile} />
+                <img src={profile} className={classes.profile} alt="Zhao's face"/>
               </Grid>
               <Grid item xs={1}></Grid>
               <div className={classes.text}>
                 <Typography variant="body1">
                   Hi! おはよう。你好！I'm Zhao, currently studying in Yale-NUS College.
-                  </Typography>
+                </Typography>
                 <Typography variant="body1">
-                  I enjoy creating things that bring people happiness and convenience. Be it creating a birthday website for my friend during the Covid-19
-                  pandemic or any application in particular, my goal is to always build things that enhance people's experience with technology.
-                  </Typography>
+                  I used to be a software engineer that tinkered with projects like creating a birthday website for my friend during the Covid-19
+                  pandemic. However, Math has taken over and I'd love to see how it can be applied to Data Science to create business value.
+                </Typography>
                 <Typography variant="body1">
-                  Currently, my experience and competencies lie in web development, scientific research and optical character recognition.
-                  In the short term, I'd like to explore opportunities related to software engineering.
-            </Typography>
+                  Currently, I am exposed to web development, scientific research, optical character recognition and Natural Language Processing.
+                  Right now, I'd like to explore opportunities related to software engineering.
+                </Typography>
               </div>
               <Grid item xs={12}>
                 <div className={classes.buttonGroup}>
